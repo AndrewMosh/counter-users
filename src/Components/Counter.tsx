@@ -1,11 +1,8 @@
 import React, { useState } from "react";
-
-type CounterState = {
-  count: number;
-};
+import { counterState } from "../types/props";
 
 const Counter = () => {
-  const [state, setState] = useState<CounterState>({ count: 0 });
+  const [state, setState] = useState<counterState>({ count: 0 });
 
   const incrementCount = () => {
     setState({ count: state.count + 1 });
